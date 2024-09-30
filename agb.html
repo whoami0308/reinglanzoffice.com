@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="/img/icon/ico.ico">
+    <title>Reinglanz</title>
+</head>
+
+<body>
+
+    <style>
+        /*Обнуление*/
+        * {
+            padding: 0;
+            margin: 0;
+            border: 0;
+        }
+
+        *,
+        *:before,
+        *:after {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        :focus,
+        :active {
+            outline: none;
+        }
+
+        a:focus,
+        a:active {
+            outline: none;
+        }
+
+        nav,
+        footer,
+        header,
+        aside {
+            display: block;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            font-size: 100%;
+            line-height: 1;
+            font-size: 14px;
+            -ms-text-size-adjust: 100%;
+            -moz-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        input,
+        button,
+        textarea {
+            font-family: inherit;
+        }
+
+        input::-ms-clear {
+            display: none;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        button::-moz-focus-inner {
+            padding: 0;
+            border: 0;
+        }
+
+        a,
+        a:visited {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        img {
+            vertical-align: top;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: inherit;
+            font-weight: 400;
+        }
+
+        /*--------------------*/
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 10;
+        }
+
+        h1 {
+            padding-top: 50px;
+            font-size: 40px;
+        }
+
+        .h6-menu {
+            margin-top: 20px;
+        }
+
+        .h6-menu h6 {
+            padding-bottom: 10px;
+        }
+
+        .h6-menu a {
+            font-size: 18px;
+            color: #000;
+        }
+
+        .h6-menu a:hover {
+            cursor: pointer;
+            color: #887b7b;
+        }
+
+        h6 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 20px;
+            padding: 20px 0;
+        }
+
+        .subtitle {
+            padding-top: 30px;
+        }
+
+        .wrapper {
+            position: relative;
+        }
+
+        .wrapper__up img {
+            position: absolute;
+            max-width: 40px;
+            height: 40px;
+            right: 35px;
+            bottom: 55px;
+            position: fixed;
+            z-index: 5;
+            filter: invert(.9);
+        }
+    </style>
+
+    <div class="wrapper" id="up">
+
+        <div class="wrapper__up">
+            <a href="#up">
+                <img src="/img/up.png" alt="">
+            </a>
+        </div>
+
+        <h1>AGB</h1>
+
+        <h6 class="subtitle">
+            <pre>
+Allgemeine Geschäftsbedingungen für Reinigung
+
+der Firma Reinglanz UG (haftungsbeschränkt),
+
+vertreten durch den Geschäftsführer, Andrii Havrylenko,
+
+geschäftsansässig Makarenkostr. 4, 17438 Wolgast
+
+– nachfolgend “ Reinglanz“ genannt –
+            </pre>
+        </h6>
+
+        <div class="h6-menu">
+            <h6><a href="#1">1.) Allgemeines</a></h6>
+            <h6><a href="#2">2.) Vertragsdauer und Kündigung</a></h6>
+            <h6><a href="#3">3.) Objekteinweisung</a></h6>
+            <h6><a href="#4">4.) Leistungen Reinglanz</a></h6>
+            <h6><a href="#5">5.) Umfang und Durchführung der Leistungen</a></h6>
+            <h6><a href="#6">6.) Reinigungsmittel und Geräte</a></h6>
+            <h6><a href="#7">7.) Leistungen des Auftraggebers</a></h6>
+            <h6><a href="#8">8.) Reklamationen</a></h6>
+            <h6><a href="#9">9.) Vergütung</a></h6>
+            <h6><a href="#10">10.) Haftung und Haftungsbegrenzung</a></h6>
+            <h6><a href="#11">11.) Abwerbung</a></h6>
+            <h6><a href="#12">12.) Unterbrechung der Reinigung</a></h6>
+            <h6><a href="#13">13.) Rechtsnachfolge</a></h6>
+            <h6><a href="#14">14.) Lohn- und Preisgleitklausel</a></h6>
+            <h6><a href="#15">15.) Datenschutz</a></h6>
+            <h6><a href="#16">16.) Schlussbestimmungen</a></h6>
+            <h6><a href="#17">17.) Gerichtsstand und Erfüllungsort</a></h6>
+        </div>
+
+
+        <br>
+        <h6 id="1">1.) Allgemeines:</h6>
+        <br>
+        <p>
+            Alle Dienstleistungen des Auftragnehmers erfolgen zu diesen Bedingungen. Der
+
+            Auftraggeber erkennt durch den Vertragsabschluss bzw. die Aufgabe von Bestellungen
+
+            ausdrücklich an, dass diese Bedingungen Vertragsbestandteil sind. Für zukünftige, weitere
+
+            Vertragsabschlüsse oder laufende Vertragsbeziehungen gelten die allgemeinen
+
+            Geschäftsbedingungen
+
+            des Auftragnehmers auch ohne weitere ausdrückliche Bezugnahme in der jeweils gültigen
+
+            Form als vereinbart.
+
+            Etwaige, entgegenstehende Bedingungen des Auftraggebers sind auch dann, wenn keine
+
+            Zurückweisung erfolgt, nur und in soweit verbindlich, als die in ausdrücklicher Abänderung
+
+            dieser Geschäftsbedingungen schriftlich vereinbart werden.
+
+            Mündliche und fernmündliche Vereinbarungen oder Absprachen, auch mit
+
+            Außendienstmitarbeitern des Auftraggebers, gelten nur dann als rechtswirksam vereinbart,
+
+            wenn sie von Reinglanz schriftlich bestätigt worden sind. Angebote von Reinglanz sind bis
+
+            zum Vertragsabschluss freibleibend und unverbindlich. Bei der regelmäßig vorgesehenen
+
+            Schriftform kommt der Vertrag durch die beiderseitige Unterzeichnung von Auftraggeber und
+
+            Reinglanz zustande. Erteilt der Auftraggeber den Auftrag mündlich, so kommt dieser unter
+
+            Zugrundelegung des schriftlichen Angebotes mit der Auftragsbestätigung durch Reinglanz
+
+            zustande.
+
+            Für jeden Vertragsabschluss gelten die zu diesem Zeitpunkt jeweils gültigen Preise; bei
+
+            laufenden Geschäftsbeziehungen gelten die jeweils vereinbarten leistungszeitpunktgültigen
+
+            Preise von Reinglanz.
+        </p>
+        <br>
+        <h6 id="2">2.) Vertragsdauer und Kündigung:</h6>
+        <br>
+        <p>
+            Gebäudenreinigungsverträge werden zwischen Auftraggeber und Reinglanz vorerst für 3
+
+            Monate Probezeit geschlossen.
+
+            Die Kündigungsfrist beträgt bei Laufzeitverträgen drei Monate zum Ablauf des Vertrages und
+
+            bedarf der Schriftform. Wird der Vertrag nicht vor Ablauf gekündigt, so verlängert er sich
+
+            stillschweigend auf unbegrenzte Zeitraum.
+
+            Für die Rechtzeitigkeit der Kündigung kommt es nicht auf die Absendung an, sondern auf
+
+            den Eingang beim anderen Vertragspartner.
+
+            Die in den Individualverträgen vereinbarten Laufzeiten/Kündigungsfristen sind den
+
+            vorgenannten
+
+            vorrangig.
+
+            Verträge die auf Zuruf entstehen, sind von dem Zeitpunkt an verbindlich, an dem dem
+
+            Auftraggeber die schriftliche Auftragsbestätigung zugeht.
+
+            Wird der Vertrag auf unbestimmte Zeit geschlossen, so ist jede Partei berechtigt, ihn mit
+
+            einer Frist von drei Monaten zu kündigen, es sei denn, es ist etwas anderes vereinbart.
+
+            Nebenabreden, Vorbehalte, Ergänzungen und Änderungen des Vertrages bedürfen zu ihrer
+
+            Gültigkeit der schriftlichen Bestätigung beider Vertragspartner.
+        </p>
+        <br>
+        <h6 id="3">3.) Objekteinweisung</h6>
+        <br>
+        <p>
+            Vor der Tätigkeitsaufnahme durch Reinglanz ist der Auftraggeber verpflichtet, die Mitarbeiter
+
+            von Reinglanz in das zu reinigende Objekt einzuweisen und auf mögliche Gefahrenquellen
+
+            ausdrücklich hinzuweisen und sämtliche erforderlichen Schlüssel zu übergeben. Für
+
+            Schlüsselverluste und für vorsätzlich oder fahrlässig durch das Personal von Reinglanz
+
+            herbeigeführte Schlüsselbeschädigungen haftet
+
+            Reinglanz im Rahmen des Nr. 10.
+
+            Erfolgt eine Einweisung – gleich aus welchen Gründen – nicht, so kann der Auftraggeber bei
+
+            eventuellen Fehlleistungen und Schäden, die auf die mangelnde Unterrichtung
+
+            zurückzuführen sind, Reinglanz nicht schadenersatzpflichtig machen.
+
+            Reinglanz wird es gestattet, innerhalb des betreuten Objekts für Bewohner und Besucher
+
+            kenntlich, ein Firmenschild anzubringen, aus dem ersichtlich ist, dass das Objekt von
+
+            Reinglanz gereinigt wird und wie
+
+            dessen Bewohner Reinglanz erreichen können. Die Kosten hierfür werden von Reinglanz
+
+            übernommen.
+        </p>
+        <br>
+        <h6 id="4">4.) Leistungen Reinglanz</h6>
+        <br>
+        <p>
+            Reinglanz verpflichtet sich, die im Leistungsverzeichnis des Reinigungsvertrages oder in der
+
+            Auftragsbestätigung festgehaltenen Dienstleistungen fach- und sachgerecht durchzuführen
+
+            und nur durch
+
+            Arbeitskräfte durchführen zu lassen, die eine entsprechende Eignung und Zuverlässigkeit
+
+            vorweisen und in einem Arbeits-/ Rechtsverhältnis zu Reinglanz stehen. Reinglanz ist
+
+            berechtigt zur Erfüllung seiner Leistungen geeignete Subunternehmen zu beauftragen. Der
+
+            Einsatz und die Weisungsbefugnis obliegt ausschließlich Reinglanz. Abweichungen von den
+
+            Vereinbarungen sind zulässig, wenn der vertraglich vereinbarte Dienstleistungsumfang und
+
+            -standard gewahrt bleibt. Der Auftraggeber ist verpflichtet, die Leistungen des Auftragnehmers nach deren
+
+            Beendigung noch am selben Tag zu besichtigen und die ordnungsgemäße Ausführung
+
+            sowie Material- und Zeitaufwand zu bestätigen. Verzichtet der Auftraggeber auf die
+
+            Besichtigung und Bestätigung oder unterbleibt diese aus Gründen, die Reinglanz nicht zu
+
+            vertreten hat, so gelten die Leistungen als vertragsgerecht ausgeführt, es sei denn, der
+
+            Auftraggeber rügt unverzüglich nach den für Reklamationen getroffenen Vereinbarungen.
+
+            Nach Beendigung des Vertrages, gleich aus welchem Grund, ist der Reinglanz verpflichtet,
+
+            die überlassenen Schlüssel unverzüglich an den Auftraggeber zurück zu geben. Ein
+
+            Zurückbehaltungsrecht steht Reinglanz jedoch auf Grund von unbezahlten Rechnungen zu.
+
+            Für ein gepflegtes äußeres Erscheinungsbild, sowie angepasste Arbeitskleidung sorgt
+
+            Reinglanz.
+
+            Ausländisches Personal darf nur eingesetzt werden, wenn eine Aufenthalts- und
+
+            Arbeitsgenehmigung vorliegt. Das eingesetzte Personal wird durch das
+
+            Qualitätsmanagement von Reinglanz überwacht.
+
+            Dem Personal ist ausdrücklich untersagt, Einblick in Schriftstücke, Akten, Hefter usw. zu
+
+            nehmen sowie Schränke, Schreibtische oder sonstige Behältnisse zu öffnen. Das Personal
+
+            ist verpflichtet, über alle Geschäfts- und Betriebsgeheimnisse, die im Zusammenhang mit
+
+            dem Arbeitsverhältnis bekannt werden, Stillschweigen zu bewahren. Das Personal ist ferner
+
+            verpflichtet, alle Gegenstände, die in den zu reinigenden Räumen gefunden werden,
+
+            unverzüglich beim Auftraggeber abzugeben. Dem Personal ist untersagt, Personen, die
+
+            nicht vom Auftragnehmer eingesetzt sind, zur Arbeitsstelle mitzunehmen. Das gilt auch für
+
+            Kinder.
+        </p>
+        <br>
+        <h6 id="5">5.) Umfang und Durchführung der Leistungen</h6>
+        <br>
+        <p>
+            Die vereinbarten Leistungen werden im Vertrag oder in der Auftragsbestätigung festgelegt.
+
+            Sollten zusätzliche Arbeiten ausgeführt werden, so wird Reinglanz dem Auftraggeber einen
+
+            Kostenvoranschlag unterbreiten und aufgrund gesonderter Beauftragung tätig.
+
+            Vereinbarte turnusmäßige wöchentliche Leistungen können nur während der normalen
+
+            Arbeitsstunden an Werktagen erbracht werden. Entfällt ein Turnus auf einen Feiertag, so
+
+            entfällt der Anspruch des Auftraggebers auf die Durchführung der Leistung, ohne dass ihm
+
+            ein Minderungsanspruch zusteht. In den Fällen, in denen im Leistungsverzeichnis ein Turnus
+
+            von 2x wöchentlich vereinbart ist, ist Reinglanz bei Wegfall eines Turnus durch einen
+
+            Feiertag jedoch nicht verpflichtet, die ausgefallenen Leistungen durch verstärkten Einsatz
+
+            beim verbleibenden Turnus auszugleichen.
+        </p>
+        <br>
+        <h6 id="6">6.) Reinigungsmittel und Geräte</h6>
+        <br>
+        <p>
+            Reinglanz stellt die für die Reinigungsarbeiten erforderlichen Geräte, Reinigungs- und
+
+            Pflegemittel in ausreichender Menge auf ihre Kosten zur Verfügung. Für alle Arbeiten
+
+            werden nur hochwertige Reinigungsmittel verwendet. Ätzende und säurehaltige Mittel dürfen
+
+            – mit Ausnahme für Toiletten – nicht verwendet werden. PVC-Böden sind mit antistatischen
+
+            und rutschfesten Mitteln zu reinigen. Der Auftraggeber stellt das zur Reinigung notwendige
+
+            Wasser, Strom, Papier- und Mülltonnen, Handtücher und Toilettenpapier sowie einen für die Unterbringung der
+            Hilfsmittel (Material, Maschinen, Geräte) verschließbaren Raum, Schrank
+
+            o.ä. zur Verfügung und übernimmt dafür die Kosten.
+        </p>
+        <br>
+        <h6 id="7">7.) Leistungen des Auftraggebers</h6>
+        <br>
+        <p>
+            Der Auftraggeber ist verpflichtet, Reinglanz je Wirtschaftseinheit kostenlos warmes Wasser
+
+            und Strom für den
+
+            Betrieb von Maschinen in dem für die Durchführung der Arbeiten erforderlichen Umfang zur
+
+            Verfügung zu stellen, sowie einen ganzjährig frei zugänglichen Wasseranschluss mit
+
+            Schlauchanschlussmöglichkeiten zur Verfügung zu stellen.
+
+            Bei Großanlagen überlässt der Auftraggeber Reinglanz unentgeltlich einen geeigneten,
+
+            verschließbaren Raum, für Materialien, Geräte und Maschinen, sowie einen Aufenthaltsraum
+
+            für das Personal von Reinglanz.
+
+            Reinglanz sorgt dafür, dass bei der Benutzung der Räume sowie bei der Begehung des
+
+            Objektes alle gesetzlichen und behördlichen Auflagen eingehalten werden.
+        </p>
+        <br>
+        <h6 id="8">8.) Reklamationen</h6>
+        <br>
+        <p>
+            Reinglanz ist bei der Erbringung seiner Leistung verpflichtet, die Arbeiten so durchzuführen,
+
+            dass Störungen und Belästigungen weitgehend vermieden werden und die gesetzlich
+
+            bestimmten Ruhezeiten Beachtung finden. Reklamationen des Auftraggebers können nur
+
+            Berücksichtigung finden, wenn sie unverzüglich nach der Durchführung der Leistungen von
+
+            Reinglanz mittels eingeschriebenen Briefs mitgeteilt werden. Sie können nur innerhalb von
+
+            längstens 24 Stunden nach Beendigung der beanstandeten Reinigungsarbeiten von
+
+            Reinglanz berücksichtigt werden. Fernmündliche oder mündliche Reklamationen können nur
+
+            dann berücksichtigt werden, wenn deren Berechtigung von Reinglanz ausdrücklich bestätigt
+
+            wird.
+
+            Mängel müssen unverzüglich nach Beendigung der Reinigungsarbeiten gerügt werden.
+
+            Weisen die vertraglich vereinbarten Leistungen Mängel auf und wurden unverzüglich gerügt,
+
+            dann ist Reinglanz zur Nachbesserung verpflichtet und berechtigt. Rechnungskürzungen
+
+            ohne vorangegangene ordnungsgemäße Reklamation und Aufforderung zur Behebung der
+
+            Mängel bzw. Einräumung einer Nachbesserung innerhalb einer hierfür gesetzten,
+
+            angemessenen Frist, können vom Auftraggeber nicht vorgenommen werden.
+
+            Die Leistungen von Reinglanz werden dann als vertragsgerecht durchgeführt anerkannt,
+
+            wenn der Auftraggeber nach Beendigung der Arbeiten entgegen der ihn treffenden
+
+            Besichtigung- und
+
+            Bestätigungspflicht, nicht unverzüglich Einwendungen erhebt.
+        </p>
+        <br>
+        <h6 id="9">9.) Vergütung</h6>
+        <br>
+        <p>
+            Der Auftraggeber verpflichtet sich, die im Vertrag vereinbarte monatliche Vergütung
+
+            innerhalb
+
+            des vereinbarten Zahlungsziel nach Rechnungsstellung ohne jeden Abzug auf das von
+
+            Reinglanz bekannt gegebene Bank- oder Postscheckkonto zu überweisen. Das Entgelt für Leistungen aus
+            Verträgen, die auf Stundenbasis abgerechnet werden, ist
+
+            innerhalb von 10 Tagen ab Rechnungsdatum – bei Reinglanz. eingehend – zahlbar, so dass
+
+            sich der Auftraggeber am 11. Tag nach Rechnungsdatum in Verzug befindet. Der
+
+            Auftraggeber ist nur zur Aufrechnung und Zurückbehaltung mit unstreitig oder rechtskräftig
+
+            festgestellten Gegenforderungen berechtigt. Das Zurückbehaltungsrecht ist nicht
+
+            ausgeschlossen, soweit es auf demselben Vertragsverhältnis beruht. Für Leistungen an
+
+            gesetzlichen Feiertagen, sowie am 24.12. und 31.12. eines jeden Jahres wird ein
+
+            Feiertagszuschlag von 200 % in Rechnung gestellt. Ansonsten werden die Zuschläge nach
+
+            den gesetzlichen Bestimmungen mit dem Auftraggeber verrechnet. Bei Zahlungsverzug sind
+
+            wir berechtigt ein Inkassobüro mit der Eintreibung der Forderung zu beauftragen.
+
+            Auftraggeber, die im Namen von Dritten, z.B. Eigentümergemeinschaften, handeln, haften
+
+            persönlich für die Zahlungsverpflichtungen aus den erteilten Aufträgen, wenn bei
+
+            Vertragsabschluss dieser Dritte Reinglanz nicht vollzählig und mit vollständiger
+
+            Wohnanschrift durch Aufnahme in einer Anlage zum Vertrag bekannt gegeben werden und
+
+            auf das Vertretungsverhältnis nicht schriftlich im Vertrag hingewiesen wird.
+
+            Werden von Reinglanz Leistungen erbracht, für die ein gesonderter Auftrag erteilt wurde
+
+            oder bei welchen es sich um kleinere Reparaturen oder Nothilfemaßnahmen handelt, so
+
+            wird hierüber eine gesonderte Rechnung an den Auftraggeber gestellt, die ohne Abzug zur
+
+            sofortigen Zahlung fällig ist.
+
+            Kommt der Auftraggeber mit der Zahlung in Verzug, so ist Reinglanz berechtigt,
+
+            Verzugszinsen mit 2% über dem jeweils gültigen Diskontsatz zu berechnen. Ein Verzug von
+
+            mehr als 4 Wochen berechtigt den Auftragnehmer zur fristlosen Kündigung, wobei
+
+            Schadenersatzansprüche gesondert geltend gemacht werden können.
+
+            Das Personal von Reinglanz ist nicht zum Inkasso berechtigt. Trotzdem geleistete
+
+            Zahlungen an das Personal entbinden den Auftraggeber nicht von der Bezahlung der
+
+            Reinglanz zustehenden Vergütung.
+
+            Bei Zahlungsverzug ruhen die Reinigungsverpflichtungen von Reinglanz nebst deren
+
+            Haftung, ohne dass der Auftraggeber von der Verpflichtung zur Zahlung für die Vertragszeit
+
+            oder dem Vertrag überhaupt entbunden ist. Kommt der Auftraggeber mit der Abnahme der
+
+            vereinbarten Leistung in Verzug, so kann Reinglanz bei Vorliegen der gesetzlichen
+
+            Voraussetzungen Schadenersatz wegen Nichterfüllung verlangen.
+
+            Reinglanz bleibt jedoch überlassen, die Höhe ihres Anspruchs nicht im einzelnen darzulegen
+
+            und statt dessen als Schadenersatz wegen Nichterfüllung für jede nicht abgenommene
+
+            Reinigungsstunde 30 % des Stundensatzes zu beanspruchen. Der Auftraggeber hat das
+
+            Recht, nachzuweisen, dass Reinglanz durch den Abnahmeverzug kein Schaden oder ein
+
+            Schaden in nur geringerer Höhe entstanden ist.
+        </p>
+        <br>
+        <h6 id="10">10.) Haftung und Haftungsbegrenzung</h6>
+        <br>
+        <p>
+            Reinglanz haftet für Schäden, die von bei der Ausführung der vertraglich vereinbarten
+
+            Leistungen entstehen und schuldhaft verursacht werden. Ist der Auftraggeber Kaufmann,
+
+            haftet Reinglanz im Rahmen der gesetzlichen Bestimmungen nur für Schäden, die durch
+
+            Vorsatz oder grobe Fahrlässigkeit von ihr, ihren gesetzlichen Vertretern oder ihren leitenden
+
+            Angestellten verursacht werden. Beruht die Verursachung auf einfacher Fahrlässigkeit,
+
+            haftet die Firma Reinglanz dem Grunde nach nur dann, wenn wesentliche Vertragspflichten verletzt sind. Eine
+            weitergehende Haftung ist ausgeschlossen. Ist der Auftraggeber
+
+            Nichtkaufmann, haftet Reinglanz nach Maßgabe von zu vorgenanntem auch für Schäden,
+
+            die ihre sonstigen
+
+            Erfüllungsgehilfen verursachen.
+
+            Eine Haftung für Schäden, die durch Mängel am betreuten Objekt oder durch
+
+            Betriebsstörungen im Objekt entstanden sind oder Schäden aufgrund behördlicher Eingriffe,
+
+            Streiks, Aussperrung oder höhere Gewalt ist ausdrücklich ausgeschlossen. Gleiches gilt für
+
+            Schäden, die durch strafbare Handlungen von Mitarbeitern von Reinglanz verursacht
+
+            werden. Nicht ersatzfähig sind außerdem alle nicht voraussehbaren Schäden. Dazu zählen
+
+            insbesondere Schäden, die mit der Dienstleistung von Reinglanz in keinem Zusammenhang
+
+            stehen, wie z.B. bei Bedienung von Fenstereinrichtungen oder bei der Bedienung und
+
+            Betreuung von Maschinen, Kesseln, Heizvorrichtungen, elektrische Anlagen o.ä.
+
+            Der Auftraggeber ist verpflichtet, Haftpflichtansprüche unverzüglich schriftlich geltend zu
+
+            machen.
+
+            Die Haftung von Reinglanz für die nachweislich im Rahmen der erbrachten Leistungen
+
+            verursachte Schäden, wird ausdrücklich auf die Deckung entsprechend den Bedingungen
+
+            der Betriebshaftpflichtversicherung dem Grunde und der Höhe nach auf 3.000.000 EUR für
+
+            Personen-, Sach- und Vermögensschäden beschränkt.
+
+            Weitergehende Ansprüche auf Schadenersatz wegen unmittelbarer, mittelbarer oder
+
+            Folgeschäden sind ausgeschlossen.
+
+            Mit Ablauf des Servicevertrages oder Beendigung der Einzelleistungen endet die
+
+            Haftungsverpflichtung des Auftragnehmers.
+        </p>
+        <br>
+        <h6 id="11">11.) Abwerbung</h6>
+        <br>
+        <p>
+            Die Abwerbung oder versuchte Abwerbung der Arbeitskräfte von Reinglanz stellen eine
+
+            grobe Vertragsverletzung dar. Unter Abwerbung bzw. versuchter Abwerbung ist jede
+
+            Verbindung mit dem oder die Beeinflussung des Personals von Reinglanz zu sehen, die
+
+            geeignet ist, eine Kündigungsbereitschaft zu fördern, verbunden mit der Absicht, das
+
+            Personal nach seinem Ausscheiden selbst mit der Durchführung von Leistungen am
+
+            Vertragsobjekt oder anderen Objekten des Auftraggebers zu beschäftigen.
+
+            Im Falle einer erfolgten oder versuchten Abwerbung ist der Auftragnehmer berechtigt, das
+
+            Vertragsverhältnis fristlos zu lösen.
+
+            Der Auftraggeber ist im Falle der Abwerbung zur Bezahlung eines
+
+            Schadenersatzanspruches in Höhe eines Halbjahres-Bruttogehaltes des abgeworbenen
+
+            Mitarbeiters verpflichtet. Dies gilt auch dann, wenn der abgeworbene Mitarbeiter nicht in die
+
+            Dienste des Auftraggebers tritt, seine Kündigung jedoch durch Abwerbungsmaßnahmen des
+
+            Auftraggebers oder in seinem Verantwortungsbereich handelnder Personen erfolgt ist.
+        </p>
+        <br>
+        <h6 id="12">12.) Unterbrechung der Reinigung</h6>
+        <br>
+        <p>
+            Im Kriegs- oder Streikfall, bei Unruhen und anderen Fällen höherer Gewalt kann Reinglanz
+
+            den Reinigungsdienst, soweit dessen Ausführung unmöglich wird, unterbrechen oder
+
+            zweckentsprechend umstellen. Im Falle der Unterbrechung ist Reinglanz berechtigt, die
+
+            Rechnungslegung gemäß Vertrag durchzuführen.
+        </p>
+        <br>
+        <h6 id="13">13.) Rechtsnachfolge</h6>
+        <br>
+        <p>
+            Bei Tod des Auftraggebers tritt der Rechtsnachfolger in den Vertrag ein, es sei denn, dass
+
+            der Gegenstand des Vertrages hauptsächlich auf die persönlichen Belange des
+
+            Auftraggebers abgestellt war. Durch Tod, sonstige Rechtsnachfolge oder
+
+            Rechtsveränderung im Bereich der Firma Reinglanz wird der Vertrag nicht berührt.
+        </p>
+        <br>
+        <h6 id="14">14.) Lohn- und Preisgleitklausel</h6>
+        <br>
+        <p>
+            Im Falle der Veränderungen von Lohnkosten und Lohnnebenkosten erhöht sich der
+
+            Reinigungspreis um den gleichen Prozentsatz, wie die vorgenannten Kosten erhöht werden
+
+            zuzüglich der gesetzlichen MwSt.
+
+            Bei Laufzeitverträgen findet eine jährliche Anpassung des vereinbarten Entgelts i.H.v. derzeit
+
+            3% statt
+        </p>
+        <br>
+        <h6 id="15">15.) Datenschutz</h6>
+        <br>
+        <p>
+            Reinglanz verpflichtet sich Ihre Daten vertraulich nach den Bestimmungen des
+
+            Bundesdatenschutzgesetzes zu
+
+            behandeln. Reinglanz ist berechtigt ihre Daten im Hause der REINGLANZ GRUPPE an
+
+            verbundene Unternehmen
+
+            weiter zu geben.
+        </p>
+        <br>
+        <h6 id="16">16.) Schlussbestimmungen</h6>
+        <br>
+        <p>
+            Bei Nichtigkeit, Unwirksamkeit oder Undurchführbarkeit einzelner Bestimmungen dieser
+
+            AGB tritt an ihre Stelle die gesetzliche zulässige Regelung, die dem Sinn und Zweck am
+
+            nächsten kommt. Übrige Inhalte werden hiervon nicht berührt. Insofern in
+
+            Individualvereinbarungen andere Fristen oder andere gesetzlich zulässige Vereinbarungen
+
+            getroffen wurden, gelten diese vorrangig. Insofern ergänzungsbedürftige Lücken vorhanden
+
+            sein sollten, tritt an diese Stelle eine gesetzlich zulässige Regelung.
+
+            Soweit in den Allgemeinen Geschäftsbedingungen keine Sonderregelungen vereinbart sind,
+
+            gelten die gesetzlichen Bestimmungen, insbesondere diejenigen des Dienstleistungs- und
+
+            Werkvertragsrechts.
+        </p>
+        <br>
+        <h6 id="17">17.) Gerichtsstand und Erfüllungsort</h6>
+        <br>
+        <p>
+            Gerichtsstand und Erfüllungsort ist im vollkaufmännischen Geschäftsverkehr und im
+
+            Geschäftsverkehr mit Personen des öffentlichen Rechts oder öffentlich-rechtlichen
+
+            Sondervermögens der Sitz der Firma Reinglanz UG Wolgast.
+        </p>
+        <br>
+
+    </div>
+
+</body>
+
+</html>
